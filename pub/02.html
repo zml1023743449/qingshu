@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>爱你呦</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+            body {
+                background-color: #000;
+                margin: 0px;
+                /*overflow: hidden;*/
+                font-family:arial;
+                color:#fff;
+            }
+            h1{
+                margin:0;
+            }
+
+            a {
+                color:#0078ff;
+            }
+            #canvas{
+                width:100%;
+                height:100vh;
+                overflow: hidden;
+                position:absolute;
+                top:0;
+                left:0;
+                background-color: #1a1724;               
+            }
+            .canvas-wrap{
+                position:relative;
+                
+            }
+            div.canvas-content{
+                position:relative;
+                z-index:2000;
+                color:#fff;
+                text-align:center;
+                padding-top:30px;
+            }
+        </style>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<section class="canvas-wrap">
+        <div class="canvas-content">
+            <h1>OK! 正儿八经的东西正在来的路上稍等会</h1>
+        </div>
+        <div id="canvas" class="gradient"></div>
+    </section>
+	<!-- Main library -->
+    <script src="http://cdn.bootcss.com/three.js/r68/three.min.js"></script>
+    <!-- Helpers -->
+    <script src="js/projector.js"></script>
+    <script src="js/canvas-renderer.js"></script>
+    <!-- Visualitzation adjustments -->
+    <script src="js/3d-lines-animation.js"></script>
+	<script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.jq22.com/demo/jqueryFsxg201704271636/js/modernizr.2.5.3.min.js"></script>
+    <script src="js/color.js"></script>
+    <div class="flipbook-viewport sdddd">
+        <div class="container">
+            <div class="flipbook">
+                <div class="diyi">
+                    <img src="../img/apic25860.jpg" style="width: 100%; height: 100%;" alt="">
+                </div>
+                <div class="dier aaaa">
+                    <section>
+                        <h3 class="one">情书</h3>
+                        <p class="er">
+                            捷上课的艰苦实践的开始就的空间深刻的精
+                            神可嘉的空间的开始就看到几块几十块的基
+                            地剪切机为i奖金额哦亲哦大家肯定就啊开
+                            始记得啦大家快来啊就看得见啊可是大家卡
+                            觉得声卡绝对是卡简单快捷ask的就撒开大
+                            将军急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较斤
+                            斤计较急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急
+                        </p>
+                    </section>
+                </div>
+                <div class="diyi aaaa">
+                    <section>
+                        <h3 class="one">情书</h3>
+                        <p class="er">萨迪克撒旦艰苦的考生的角度看接口简单快
+                            捷上课的艰苦实践的开始就的空间深刻的精
+                            神可嘉的空间的开始就看到几块几十块的基
+                            地剪切机为i奖金额哦亲哦大家肯定就啊开
+                            始记得啦大家快来啊就看得见啊可是大家卡
+                            觉得声卡绝对是卡简单快捷ask的就撒开大
+                            将军急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较斤
+                            斤计较急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急
+                        </p>
+                    </section>
+                </div>
+                <div class="diyi aaaa">
+                    <section>
+                        <h3 class="one">情书</h3>
+                        <p class="er">萨迪克撒旦艰苦的考生的角度看接口简单快
+                            捷上课的艰苦实践的开始就的空间深刻的精
+                            神可嘉的空间的开始就看到几块几十块的基
+                            地剪切机为i奖金额哦亲哦大家肯定就啊开
+                            始记得啦大家快来啊就看得见啊可是大家卡
+                            觉得声卡绝对是卡简单快捷ask的就撒开大
+                            将军急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较斤
+                            斤计较急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急
+                        </p>
+                    </section>
+                </div>
+                <div class="diyi aaaa">
+                    <section>
+                        <h3 class="one">情书</h3>
+                        <p class="er">萨迪克撒旦艰苦的考生的角度看接口简单快
+                            捷上课的艰苦实践的开始就的空间深刻的精
+                            神可嘉的空间的开始就看到几块几十块的基
+                            地剪切机为i奖金额哦亲哦大家肯定就啊开
+                            始记得啦大家快来啊就看得见啊可是大家卡
+                            觉得声卡绝对是卡简单快捷ask的就撒开大
+                            将军急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较急
+                            急急急急急急急急急急急急急急斤斤计较斤
+                            斤计较急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急斤斤计较
+                            急急急急急急急急急急急急急急急
+                        </p>
+                    </section>
+                </div>
+                <div class="diyi">
+                    <img src="../img/apic25860.jpg" style="width: 100%; height: 100%;" alt="">
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="zhebi">
+
+    </div>
+    <script type="text/javascript">
+
+        function loadApp() {
+        
+            // Create the flipbook
+        
+            $('.flipbook').turn({
+                    // Width
+        
+                    width:922,
+                    
+                    // Height
+        
+                    height:600,
+        
+                    // Elevation
+        
+                    elevation: 50,
+                    
+                    // Enable gradients
+        
+                    gradients: true,
+                    
+                    // Auto center this flipbook
+        
+                    autoCenter: true
+        
+            });
+        }
+        
+        // Load the HTML4 version if there's not CSS transform
+        
+        yepnope({
+            test : Modernizr.csstransforms,
+            yep: ['http://www.jq22.com/demo/jqueryFsxg201704271636/js/turn.js'],
+            nope: ['http://www.jq22.com/demo/jqueryFsxg201704271636/js/turn.html4.min.js'],
+            both: ['http://www.jq22.com/demo/jqueryFsxg201704271636/css/basic.css'],
+            complete: loadApp
+        });
+        $(function(){
+            setTimeout(function(){
+                $('.sdddd').animate({
+                    "top":"0%"
+                })
+            },1000)
+            setTimeout(function(){
+                $('.zhebi').remove();
+                $('.canvas-content h1').html("好了！可以翻着看了")
+            },12000)
+        })
+        </script>
+</body>
+</html>

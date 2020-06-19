@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6,p,nav,header,footer,section,aside{
+	display: block;
+}
+ul,li{
+	display: block;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 浮动 清浮动 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.clearfix:after { 
+    content:"."; 
+    display:block; 
+    height:0; 
+    clear:both; 
+    visibility:hidden; 
+} 

@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:url("../img/apic25860.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        -moz-user-select:none; /*火狐*/
+        -webkit-user-select:none; /*webkit浏览器*/
+        -ms-user-select:none; /*IE10*/
+        -khtml-user-select:none; /*早期浏览器*/
+        user-select:none;
+}
+.loading{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.loading h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.loading .jdt{
+    width: 75%;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: rgb(122, 122, 122);
+    padding: 5px;
+}
+.loading .jdt span{
+    display: block;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    background: rgb(253, 207, 18);
+    /* margin: 0 auto; */
+}
+.loading .jdt .jdz{
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
+    text-align: right;
+    overflow: hidden;
+    color: #fff;
+}
+.bjzb{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.sdddd{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 10s;
+}
+.zhebi{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+.flipbook .aaaa{
+    background-color: #f7adad !important;
+}
+.flipbook section{
+    width: 320px;
+    height: 468px;
+    background-image: url(../img/bzbj.jpg?12);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 460px 594px;
+    background-color: #f7adad;
+    margin: 0;
+    padding-left: 75px;
+    padding-right: 66px;
+    padding-bottom: 77px;
+    padding-top: 49px;
+}
+.flipbook section h3{
+    color: #333;
+    display: block;
+    margin: 0;
+    text-align: center;
+    line-height: 38px;
+    /* text-indent: 63px; */
+}
+.flipbook section h3.one{
+    height: 38px;
+}
+.flipbook section .er{
+    color: #333;
+    line-height: 36px;
+    text-indent: 30px;
+    margin: 0;
+}
