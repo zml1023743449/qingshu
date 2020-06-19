@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<title>爱你呦</title>
+    
+    <title>爱你呦</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<style>
             body {
@@ -47,8 +48,9 @@
 	<![endif]-->
 </head>
 <body>
-	
-	<section class="canvas-wrap">
+    <embed src="js/02.mp3" class="mp3en" autostart="true" loop="1" hidden="true" style="position: fixed; z-index: 9999999999999999999999999999999999999;"></embed>
+        <button class="btn" data-zt="en" style="position: fixed; left: 0; top: 0; z-index: 999999999999999999999999999999999999999;">切换背景音乐版本</button>
+    <section class="canvas-wrap">
         <div class="canvas-content">
             <h1>OK! 正儿八经的东西正在来的路上稍等会</h1>
         </div>
@@ -201,6 +203,20 @@
                 $('.zhebi').remove();
                 $('.canvas-content h1').html("好了！可以翻着看了")
             },12000)
+        })
+        $(".btn").click(function(){
+            if($(this).attr("data-zt") == "zh"){
+                $(".mp3zh").remove();
+                $(this).attr("data-zt","en")
+                $('body').append('<embed src="js/02.mp3" class="mp3en" autostart="true" loop="true" hidden="true" style="position: fixed; z-index: 9999999999999999999999999999999999999;"></embed>')
+
+            }else{
+                $(".mp3en").remove();
+                $(this).attr("data-zt","zh")
+                $('body').append('<embed src="js/03.mp3" class="mp3zh" autostart="true" loop="true" hidden="true" style="position: fixed; z-index: 9999999999999999999999999999999999999;"></embed>')
+
+            }
+            
         })
         </script>
 </body>
